@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image picker</title>
+</head>
+<body style="margin: 500px">
+    
+    <center>
+        <select onchange="gantigambar();" id="listgambar">
+        <option value="https://upload.wikimedia.org/wikipedia/commons/e/ed/Red_Velvet_Psycho_-_logo.png">Pilih Personil</option>
+        <option value="https://upload.wikimedia.org/wikipedia/commons/9/9d/Irene_Bae_at_GMP-KIX_Airport_on_January_22%2C_2020.png">Irene Red Velvet</option>
+        <option value="https://upload.wikimedia.org/wikipedia/commons/3/3e/Kang_Seul-gi_at_Coca-Cola_Event_on_January_18%2C_2020_03.jpg">Seulgi Red Velvet</option>
+        <option value="https://upload.wikimedia.org/wikipedia/commons/6/62/Wendy_at_Incheon_Airport_on_September_9%2C_2019.jpg">Wendy Red Velvet</option>
+        <option value="https://upload.wikimedia.org/wikipedia/commons/5/52/20191002_조이.png">Joy Red Velvet</option>
+        <option value="https://upload.wikimedia.org/wikipedia/commons/5/52/Kim_Yeri_at_Asia_Artist_Awards_on_November_26%2C_2019.jpg">Yeri Red Velvet</option>
+        </select>
+    </center>
+        <br/>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Red_Velvet_Psycho_-_logo.png" style="width: 100%" id="gambar">
+</body>
+<script type="text/javascript">
+	function gantigambar() {
+		let gambar = document.getElementById("listgambar").value;
+		document.getElementById("gambar").src = gambar;
+		alert("Ini Gambar " + gambar);
+	}
+</script>
+</html>
